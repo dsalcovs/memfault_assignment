@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Integer, ForeignKey
+from sqlalchemy import Column, String, Integer, ForeignKey, DateTime, func
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -66,6 +66,7 @@ class DeviceFirmwareUpdates(Base):
     id = Column(Integer, primary_key=True, nullable=False)
     device_id = Column(ForeignKey('devices.id'), nullable=False, index=True)
     version = Column(String, nullable=False)
+    date = Column(DateTime, nullable=False, default=func.now())
 
     device = relationship(Devices)
 
