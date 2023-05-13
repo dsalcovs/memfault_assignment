@@ -59,3 +59,15 @@ class DeviceApiKeys(Base):
 
     def __repr__(self):
         return 'id: {}'.format(self.id)
+
+
+class DeviceFirmwareUpdates(Base):
+    __tablename__ = 'device_firmware_updates'
+    id = Column(Integer, primary_key=True, nullable=False)
+    device_id = Column(ForeignKey('devices.id'), nullable=False, index=True)
+    version = Column(String, nullable=False)
+
+    device = relationship(Devices)
+
+    def __repr__(self):
+        return 'id: {}'.format(self.id)
