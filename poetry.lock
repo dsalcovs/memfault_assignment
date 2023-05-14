@@ -83,22 +83,6 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
-name = "flask-sqlalchemy"
-version = "3.0.3"
-description = "Add SQLAlchemy support to your Flask application."
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "Flask-SQLAlchemy-3.0.3.tar.gz", hash = "sha256:2764335f3c9d7ebdc9ed6044afaf98aae9fa50d7a074cef55dde307ec95903ec"},
-    {file = "Flask_SQLAlchemy-3.0.3-py3-none-any.whl", hash = "sha256:add5750b2f9cd10512995261ee2aa23fab85bd5626061aa3c564b33bb4aa780a"},
-]
-
-[package.dependencies]
-Flask = ">=2.2"
-SQLAlchemy = ">=1.4.18"
-
-[[package]]
 name = "greenlet"
 version = "2.0.2"
 description = "Lightweight in-process concurrent programming"
@@ -416,4 +400,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "43ed61c08e3167979368d5ca9e3c09b4e80d236c1fcd0afe9674063ce10dd38e"
+content-hash = "5a987df0667615d203e636bb586e73627b8887087280db266abeec07ce18e03d"

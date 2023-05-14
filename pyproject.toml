@@ -12,7 +12,6 @@ sqlalchemy = "^2.0.13"
 psycopg2 = "^2.9.6"
 alembic = "^1.10.4"
 flask = "^2.3.2"
-flask-sqlalchemy = "^3.0.3"
 
 [build-system]
 requires = ["poetry-core"]
